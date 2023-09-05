@@ -9,17 +9,10 @@ type Mutation {
   deleteCat(id: String!): Cat
 }
 
-type Owner {
-  id: Int!
-  name: String!
-  age: Int
-}
-
 type Cat {
   id: String
   name: String
   age: Int
-  owner: Owner
 }
 
 input UpdateCatInput {

@@ -30,17 +30,10 @@ export interface IMutation {
     deleteCat(id: string): Nullable<Cat> | Promise<Nullable<Cat>>;
 }
 
-export interface Owner {
-    id: number;
-    name: string;
-    age?: Nullable<number>;
-}
-
 export interface Cat {
     id?: Nullable<string>;
     name?: Nullable<string>;
     age?: Nullable<number>;
-    owner?: Nullable<Owner>;
 }
 
 type Nullable<T> = T | null;
